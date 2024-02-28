@@ -36,6 +36,11 @@ Comandos para inicializar un repositorio
 
 ***git switch nombre de la rama ---> para cambiar de rama
 
+***git commit -am "mensaje" ---> para agregar y commitear al mismo tiempo
+
+***git push origin nombre de la rama ---> para subir una rama
+
+***git pull origin nombre de la rama ---> para bajar una rama
 
 
 //// comandos para rutina de guardado ---> primero usar siempre git add luego el git commit y por ultimo es buena practica usar el git status para ver si todo esta bien
