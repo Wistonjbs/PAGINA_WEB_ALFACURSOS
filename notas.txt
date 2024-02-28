@@ -20,4 +20,8 @@ Comandos para inicializar un repositorio
 
 //// comandos para rutina de guardado
 
-***
+*** git commit ---> i ---> "agregar comentario" ---> tecla esc ---> escribir :wq ---> enter
+
+*** git config --global -l
+
+*** git config --global user.email " "
