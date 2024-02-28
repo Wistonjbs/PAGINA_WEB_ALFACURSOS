@@ -18,10 +18,23 @@ Comandos para inicializar un repositorio
 *** git add
         Agrega los archivos al git(carrito por asi decirlo)
 
-//// comandos para rutina de guardado
-
 *** git commit ---> i ---> "agregar comentario" ---> tecla esc ---> escribir :wq ---> enter
 
 *** git config --global -l
 
 *** git config --global user.email " "
+
+*** git log --oneline 
+
+***git branch----> para ver las ramas
+
+***git branch nombre de la rama ---> para crear una rama
+
+***git branch -D nombre de la rama ---> para borrar una rama
+
+***git switch -c nombre de la rama ---> para crear una rama
+
+***git switch nombre de la rama ---> para cambiar de rama
+
+//// comandos para rutina de guardado ---> primero usar siempre git add luego el git commit y por ultimo es buena practica usar el git status para ver si todo esta bien
+
