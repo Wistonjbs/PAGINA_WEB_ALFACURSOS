@@ -1,0 +1,23 @@
+La rama principal de todo proyecto se conoce como master/main (se le conoce asi pq es la rama que siempre esta funcionando)
+
+Luego tenemos la rama de desarrollo llamada develop a la cual se le sube código constantemente 
+
+En grupos de trabajo normalmente siempre se crean ramas personales o features 
+
+Comandos para inicializar un repositorio 
+
+*** git init
+        se usa para inicializar el git
+
+*** git status
+        te da el estatus del git 
+
+*** git help
+        Te da la lista de comandos
+
+*** git add
+        Agrega los archivos al git(carrito por asi decirlo)
+
+//// comandos para rutina de guardado
+
+***
