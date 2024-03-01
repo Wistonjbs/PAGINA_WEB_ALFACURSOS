@@ -45,5 +45,5 @@ Comandos para inicializar un repositorio
 *** git push -f origin nombre de la rama ---> se usa para forzar un push 
 
 
-//// comandos para rutina de guardado ---> primero usar siempre git add luego el git commit y por ultimo es buena practica usar el git status para ver si todo esta bien
+//// comandos para rutina de guardado ---> primero usar siempre git add . luego el git commit -am "Nombre del mensaje", luego ponemos el push al origin (nombre de la rama) y por ultimo es buena practica usar el git status para ver si todo esta bien
 
