@@ -42,6 +42,8 @@ Comandos para inicializar un repositorio
 
 ***git pull origin nombre de la rama ---> para bajar una rama
 
+*** git push -f origin nombre de la rama ---> se usa para forzar un push 
+
 
 //// comandos para rutina de guardado ---> primero usar siempre git add luego el git commit y por ultimo es buena practica usar el git status para ver si todo esta bien
 
