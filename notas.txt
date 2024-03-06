@@ -48,3 +48,5 @@ Comandos para inicializar un repositorio
 //// comandos para rutina de guardado ---> primero usar siempre git add . luego el git commit -am "Nombre del mensaje", luego ponemos el push al origin (nombre de la rama) y por ultimo es buena practica usar el git status para ver si todo esta bien
 
 //// Comandos para actualizar una rama ----> primero tenemos que hacer la rutina de guardado si no la hemos hecho, luego hay que cambiarnos a la rama que queramos actualizar y ahora hay que hacer un merge (nombre de la rama que este ahead) por ultimo eso tenemos que pushearlo al origin 
+
+///comandos para actualizar una rama ----> git fetch descarga los cambios en repositorios , git pull origin (nombre de la rama que queremos actualizar)

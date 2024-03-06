@@ -46,11 +46,31 @@
             <!-- el ul se refiere al grupo de textos no ordenados que van en la barra de navegacion -->
             <ul>
                 <!-- los li son los textos dentro del ul, se tiene que usar li para que este ordenado -->
-                <li>Inicio</li>
-                <li>¿Que son?</li>
-                <li>Eventos</li>
-                <li>Las leyendas</li>
-                <li>Plataformas</li>
+                <li> 
+                    <a href="/#inicio1">
+                        Inicio
+                    </a> 
+                </li>
+                <li>
+                    <a href="Contenido1">
+                        ¿Que son? 
+                    </a>
+                </li>
+                <li>
+                    <a href="Contenido2">
+                        Eventos
+                    </a>
+                </li>
+                <li>
+                    <a href="Contenido3">
+                        Las leyendas
+                    </a>
+                </li>
+                <li>
+                    <a href="Contenido4">
+                        Plataformas
+                    </a>
+                </li>
             </ul>
 
             <button>Contáctanos</button>
@@ -60,7 +80,7 @@
     <main>
 
         <!-- Seccion 1 de la pagina, jumbotron -->
-        <section>
+        <section id="inicio1">
 
             <h2>EL CRECIMIENTO DE</h2>
             <h2>LOS E-SPORTS</h2>
@@ -72,7 +92,7 @@
         </section>
 
         <!-- Seccion 2, parte de revolucion digital del deporte -->
-        <section>
+        <section id="Contenido1">
 
             <h2>LA REVOLUCIÓN DIGITAL DEL DEPORTE</h2>
 
@@ -110,7 +130,8 @@
         </section>
 
 
-        <section>
+        <!-- seccion 3, parte de las competencias con mas audiencia -->
+        <section id="Contenido2">
             <h2>COMPETENCIAS CON MÁS AUDIENCIA</h2>
 
             <img src="img/img_worls.png" alt="">
@@ -144,7 +165,59 @@
             
         </section>
 
+        <!-- seccion 4, parte de las leyendas de los e-sports -->
+        <section id="Contenido3">
+            <h2>LEYENDAS DE LOS E-SPORTS</h2>
+        </section>
 
+
+        <!-- Seccion 5, parte de las plataformas mas utilizadas -->
+        <section id="Contenido4">
+            <h2>PLATAFORMAS MÁS UTILIZADAS</h2>
+            <div>
+                <img src="img/icon_yt.png" alt="icono representativo de youtube">
+
+                <h3>YouTube</h3>
+                <p>Es una plataforma de Internet que permite a sus usuarios subir, visualizar y compartir videos.  
+                    Se ha convertido en uno de los sitios webs más populares para el streaming de e-sports.</p>
+                <button>Ir</button>
+
+            </div>
+            <div>
+                <img src="img/icon_face.png" alt="icono representativo de facebook gaming">
+
+                <h3>Facebook Gaming</h3>
+                <p>Es una plataforma integrada en Facebook que permite a los usuarios transmitir y ver contenido de videojuegos en vivo. 
+                    Se ha convertido en uno de los sitios webs más populares para el streaming de e-sports.</p>
+                <button>Ir</button>
+            </div>
+            <div>
+                <img src="img/icon_ttv.png" alt="icono representativo de Twitch">
+
+                <h3>Twitch</h3>
+                <p>También conocida como Twitch.tv, es una plataforma de streaming de videos en vivo.  
+
+                    Se ha convertido en el sitio web más popular para el streaming de e-sports actualmente.</p>
+                <button>Ir</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>FORMULARIO</h2>
+            
+            <form action="https://reqres.in/api/login" method="post">
+                
+                <input type="text" name="email" placeholder="email" required>
+                <input type="password" name="password"  placeholder="password" required>
+                <input type="checkbox" name="" id="">
+
+                <button type="submit">Enviar</button>
+
+                <textarea name="" id="" cols="30" rows="10"> </textarea>
+            </form>
+        </section>
+
+    
     </main> 
 
 
