@@ -1,36 +1,64 @@
 /* Selector universal, selecciona todos los elementos, por lo general los estilos comienzan con este selector. Es el menos especifico de los selectores.  Aqui debemos setear los estilos */
 
 * {
-    color: #2e2e2e;
     font-size: 1.1rem;
     font-weight: 400;
-    font-family: Arial,'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
+    
+    text-decoration: none;
+    list-style: none;    
+    border: 1px solid #96176a;
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+    
+    /* La propiedad mas importante del setteo de estilos se llama box sizing */
+    box-sizing: border-box;
 }
-
-
 
 @font-face {
     font-family: Arial;
     src: url('/assets/fonts/ARIAL.TTF');
 }
 /* 
-        Algunas medidas para las letras
+Algunas medidas para las letras
+
+**********FIJAS
+
+pixeles px
+puntos pt
+
+EM     em = 16px
+REM    rem = 16px
+*****Por lo general se utilizan em y rem para texto
+
+
+
+*********RESPONSIVAS
+
+Porcentuales % 
+referencias de viewport vw vh*/
+
+
+/* a partir de aca comienzan los selectores por etiquetas. Las etiquetas tienen mayor nivel de especificacion*/
+
+
+body{
+    color:#f2f2f2;
+    background-color: #2e2e2e;
+    background-image: linear-gradient( 0deg, #2f0a6a, #e82fb4);
+    background-image: radial-gradient(circle, red, blue);
+    background-image: url('/image.png');
+
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+img {
+    /* Cuando trabaje con elementos que no sean textos, voy a priorizar el uso de medidadas responsivas. Ejemplo, Las imagenes */
     
-    **********FIJAS
+    width: 100%;
+}
 
-    pixeles px
-    puntos pt
-    
-    EM     em = 16px
-    REM    rem = 16px
-    *****Por lo general se utilizan em y rem para texto
-
-
-
-    *********RESPONSIVAS
-
-    Porcentuales % 
-    referencias de viewport vw vh
-
-*/
