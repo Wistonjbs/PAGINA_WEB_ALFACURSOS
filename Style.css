@@ -1,0 +1,36 @@
+/* Selector universal, selecciona todos los elementos, por lo general los estilos comienzan con este selector. Es el menos especifico de los selectores.  Aqui debemos setear los estilos */
+
+* {
+    color: #2e2e2e;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: Arial,'Roboto';
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: Arial;
+    src: url('/assets/fonts/ARIAL.TTF');
+}
+/* 
+        Algunas medidas para las letras
+    
+    **********FIJAS
+
+    pixeles px
+    puntos pt
+    
+    EM     em = 16px
+    REM    rem = 16px
+    *****Por lo general se utilizan em y rem para texto
+
+
+
+    *********RESPONSIVAS
+
+    Porcentuales % 
+    referencias de viewport vw vh
+
+*/
