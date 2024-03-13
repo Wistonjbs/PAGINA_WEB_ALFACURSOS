@@ -42,17 +42,17 @@
 
 
 <!-- BODY es la informacion visual de la pagina, es decir todo lo que se ve en el viewport -->
-<body>
+<body class="body">
 
     <!-- esto es el header de la pagina -->
-    <header>
+    <header class="navbar">
         <!-- El nav va dentro del header y se refiere a los controles de navegacion -->
-        <nav>  
+        <nav class="navbar__nav">  
             <!-- es el icono dentro de la barra nav -->
-            <img src="/assets/img/icono.png" alt="Icono representativo de unas cruzetas de control de videojuegos">
+            <img src="/assets/img/icono.png" alt="Icono representativo de unas cruzetas de control de videojuegos" class="navbar__nav__icon">
 
             <!-- el ul se refiere al grupo de textos no ordenados que van en la barra de navegacion -->
-            <ul>
+            <ul class="navbar__nav__list">
                 <!-- los li son los textos dentro del ul, se tiene que usar li para que este ordenado -->
                 <li> 
                     <a href="/#inicio1">
@@ -81,21 +81,22 @@
                 </li>
             </ul>
 
-            <button>Contáctanos</button>
+            <button>Proximos Eventos</button>
         </nav>
     </header>
 
     <main>
 
         <!-- Seccion 1 de la pagina, jumbotron -->
-        <section id="inicio1">
+        <section id="inicio1" class="section jumbotron">
+            
+            <img class="jumbotron__img" src="/assets/img/img_jumbotron.png" alt="foto representativa de un equipo de e-sports">
+            
+            <h2 class="jumbotron__txt">EL CRECIMIENTO DE</h2>
+            <h2 class="jumbotron__txt">LOS E-SPORTS</h2>
 
-            <h2>EL CRECIMIENTO DE</h2>
-            <h2>LOS E-SPORTS</h2>
+            <button class="jumbotron__bttn"> Ver calendario de eventos</button>
 
-            <button> Ver calendario de eventos</button>
-
-            <img src="/assets/img/img_jumbotron.png" alt="foto representativa de un equipo de e-sports">
 
         </section>
 
