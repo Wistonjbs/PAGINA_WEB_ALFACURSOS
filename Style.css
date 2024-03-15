@@ -1,15 +1,18 @@
 /* Selector universal, selecciona todos los elementos, por lo general los estilos comienzan con este selector. Es el menos especifico de los selectores.  Aqui debemos setear los estilos */
 
 * {
-    font-size: 1.1rem;
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1.1rem;
     font-style: normal;
+    font-variation-settings:
+    "slnt" 0;
+    color: #f2f2f2;
    
     
     text-decoration: none;
     list-style: none;    
-    border: 1px solid #96176a;
+    /* border: 1px solid #96176a;  */
     margin: 0;
     padding: 0;
     outline: none;
@@ -64,14 +67,44 @@ img {
 } 
 */
 
+
+
 .body{
     background-color: #2e2e2e;
+}
+
+.bttn {
+    color: #f2f2f2;
+    background-color: #F22797;    
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 15px 30px;
+    transition: background .4s ease-in, color .9s ease-in ;
+    border: 0px;
+}
+
+
+.bttn:hover{
+    color: #d3d2d2;
+    background-color: #97105a
+}
+
+.separadores{
+
+    border: none;
+    height: 3px;
+    background-image: radial-gradient(#f22797, #1E3259); 
+    
 }
 
 .navbar {
 
     background-color: #1E3259;
     padding: 16px 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
 
 }
 
@@ -82,10 +115,7 @@ img {
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-    position: sticky;
-    top: o;
-    left: 0;
-    z-index: 100;
+    
 }
 
 
@@ -105,18 +135,18 @@ img {
     color: #f2f2f2;
 }
 
-.navbar__nav button {
+.navbar__nav__list__bttn {
     color: #f2f2f2;
     background-color: #F22797;    
     font-weight: bold;
     border-radius: 10px;
     padding: 15px 30px;
     transition: background .4s ease-in, color .9s ease-in ;
-    
+    border: 0px;
     
 }
 
-.navbar__nav button:hover {
+.navbar__nav__list__bttn:hover {
     color: #d3d2d2;
     background-color: #97105a
     
@@ -124,21 +154,10 @@ img {
 
 
 
-.button {
-    color: #f2f2f2;
-    font-weight: bold;
-    border-radius: 10px;
-    padding: 15px 30px;
-    background-color: #F22797
-}
 
-.button:hover{
-    background-color: #F22797;
-
-}
 
 .jumbotron{
-    height: 400px;
+    height: 620px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,7 +169,7 @@ img {
 }
 
 .jumbotron__img{
-
+    background-color: #000000;
     position: absolute;
     z-index: -10;
     top: 0;
@@ -158,5 +177,184 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: .2;
+    filter: blur(3px);
+    filter: brightness(50%);
+    filter: saturate(120%);
+    filter: brightness(-120%);
+    filter: opacity(59%);
+    
 }
+
+.jumbotron__txt{
+    font-size: 4.5rem;
+    font-weight: 650;
+    
+}
+
+.jumbotron__txt2{
+    font-size: 6.6rem;
+    font-weight: bold;
+}
+
+
+.jumbotron__bttn{
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 5px solid;
+    border-radius: 10px;
+    background: transparent;
+    border-image: linear-gradient(180deg, #f22797, #1E3259);
+    border-image-slice: 1;   
+    cursor: pointer;
+    margin-top: 2%;
+   
+}
+
+.jumbotron__bttn:hover{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #ffffff;
+    border: 5px solid;
+    border-radius: 10px;
+    background: transparent;
+    border-image: linear-gradient(0deg, #f22797, #1E3259);
+    border-image-slice: 1;
+}
+
+.contenidoI {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7%;
+}
+
+.contenidoI__title{
+    font-weight: bold;
+    margin-top: 7%;
+    margin-bottom: 2.5%;
+}
+
+.contenidoI__divPrincipal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidoI__divPrincipal__tarjetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 50px;
+}
+
+.contenidoI__divPrincipal__tarjetas__icon{
+    width: 30%;
+    height: 30%;
+}
+
+
+.contenidoI__divPrincipal__tarjetas__title{
+    font-weight: bold;
+    margin: 6%;
+    text-align: center;
+}
+
+.contenidoI__divPrincipal__tarjetas__txt{
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.contenidoII{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('assets/img/img_texture.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    padding: 20px; 
+}
+.contenidoII__title{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+    margin-top: 7%;
+    margin-bottom: 2.5%;
+}
+
+.contenidoII__divPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 50px;
+    gap: 10px;
+    margin-bottom: 7%;
+       
+}
+
+.contenidoII__divPrincipal__todo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.contenidoII__divPrincipal__todo__img{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   padding: 15px 30px;
+}
+
+
+.contenidoII__divPrincipal__todo__contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+.contenidoII__divPrincipal__todo__txt__title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5%;
+}
+
+.contenidoII__divPrincipal__todo__txt__p{
+    text-align: center;
+    font-weight: normal;
+    font-size: 0.9rem;
+    margin-bottom: 5%;
+}
+
+.contenidoII__divPrincipal__todo__contenedor__txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 50px;
+    font: ;
+
+}
+
+.contenidoII__divPrincipal__todo__contenedor__bttn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+

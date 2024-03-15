@@ -35,7 +35,7 @@
     <!--  ESTO SALIO DE GOOGLE FONT, SON TIPOS DE LETRAS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -81,7 +81,9 @@
                 </li>
             </ul>
 
-            <button>Proximos Eventos</button>
+            <a class="navbar__nav__list__bttn" href="https://es.egamersworld.com/" target="_blank">
+                Proximos Eventos
+           </a>
         </nav>
     </header>
 
@@ -93,86 +95,129 @@
             <img class="jumbotron__img" src="/assets/img/img_jumbotron.png" alt="foto representativa de un equipo de e-sports">
             
             <h2 class="jumbotron__txt">EL CRECIMIENTO DE</h2>
-            <h2 class="jumbotron__txt">LOS E-SPORTS</h2>
+            <h2 class="jumbotron__txt2">LOS E-SPORTS</h2>
 
-            <button class="jumbotron__bttn"> Ver calendario de eventos</button>
-
+            <a class="jumbotron__bttn" href="https://es.egamersworld.com/" target="_blank">
+                 Ver calendario de eventos
+            </a>
+            
 
         </section>
 
+        <hr class="separadores">
         <!-- Seccion 2, parte de revolucion digital del deporte -->
-        <section id="Contenido1">
+        <section id="Contenido1" class="section contenidoI">
 
-            <h2>LA REVOLUCIÓN DIGITAL DEL DEPORTE</h2>
+            <h2 class="contenidoI__title">LA REVOLUCIÓN DIGITAL DEL DEPORTE</h2>
 
             <!-- contenedor de tarjetas -->
-            <div>
+            <div class="contenidoI__divPrincipal">
 
                 <!-- tarjeta 1 -->
-                <div>
-                    <img src="/assets/img/icon_what.png" alt="icono representativo a un control de videojuegos">
+                <div class="contenidoI__divPrincipal__tarjetas">
+                    <img src="/assets/img/icon_what.png" alt="icono representativo a un control de videojuegos" class="contenidoI__divPrincipal__tarjetas__icon">
 
-                    <h3>¿Que son?</h3>
-                    <p>Los Esports, también conocidos como deportes electrónicos, son una forma de competencia que se lleva a cabo a través de videojuegos. Estas competencias pueden variar desde partidas individuales hasta competencias de equipos, y pueden involucrar a jugadores profesionales o amateurs.</p>
+                    <h3 class="contenidoI__divPrincipal__tarjetas__title">¿Que son?</h3>
+                    <p class="contenidoI__divPrincipal__tarjetas__txt">Los Esports, también conocidos como deportes electrónicos, son una forma de competencia que se lleva a cabo a través de videojuegos. Estas competencias pueden variar desde partidas individuales hasta competencias de equipos, y pueden involucrar a jugadores profesionales o amateurs.</p>
                 </div>
               
                 
                 <!-- tarjeta 2 -->
-                <div>  
-                    <img src="/assets/img/icon_type.png" alt="Icono que representa tipos de juego"> 
+                <div class="contenidoI__divPrincipal__tarjetas">  
+                    <img src="/assets/img/icon_type.png" alt="Icono que representa tipos de juego" class="contenidoI__divPrincipal__tarjetas__icon"> 
 
-                    <h3>Tipos de E-sports</h3>
-                    <p>Los Esports abarcan una variedad de géneros de videojuegos, incluyendo juegos de estrategia en tiempo real (RTS), juegos de disparos en primera persona (FPS), juegos de lucha, y juegos multijugador de batalla en línea (MOBA), entre otros.</p>   </div>
-                <div>
+                    <h3 class="contenidoI__divPrincipal__tarjetas__title">Tipos de E-sports</h3>
+                    <p class="contenidoI__divPrincipal__tarjetas__txt">Los Esports abarcan una variedad de géneros de videojuegos, incluyendo juegos de estrategia en tiempo real (RTS), juegos de disparos en primera persona (FPS), juegos de lucha, y juegos multijugador de batalla en línea (MOBA), entre otros.
+                    </p>   
+                </div>
 
                     <!-- tarjeta 3 -->
-                </div>
-                    <img src="/assets/img/icon_platform.png" alt="Icono representativo a plataformas">
+                <div class="contenidoI__divPrincipal__tarjetas">
+                    <img src="/assets/img/icon_platform.png" alt="Icono representativo a plataformas" class="contenidoI__divPrincipal__tarjetas__icon">
     
-                    <h3>Plataformas</h3>
-                    <p>Las competencias de Esports se llevan a cabo en eventos en vivo frente a una audiencia, así como en línea a través de plataformas de streaming. Los jugadores y equipos de Esports pueden ganar premios monetarios significativos a través de torneos y ligas.</p>
+                    <h3 class="contenidoI__divPrincipal__tarjetas__title">Plataformas</h3>
+                    <p class="contenidoI__divPrincipal__tarjetas__txt">Las competencias de Esports se llevan a cabo en eventos en vivo frente a una audiencia, así como en línea a través de plataformas de streaming. Los jugadores y equipos de Esports pueden ganar premios monetarios significativos a través de torneos y ligas.</p>
 
                 </div>
 
             </div>
 
         </section>
-
+        
+        <hr class="separadores">  
 
         <!-- seccion 3, parte de las competencias con mas audiencia -->
-        <section id="Contenido2">
-            <h2>COMPETENCIAS CON MÁS AUDIENCIA</h2>
-
-            <img src="/assets/img/img_worls.png" alt="">
+        <section id="Contenido2" class="section contenidoII" >
             
-            <div>
-                <h3>Worlds 2023 (League of Legends)</h3>
-                <p>El Worlds 2023  se trata del campeonato mundial de League of Legends, es un torneo anual organizado por Riot Games que marca el final de cada temporada. Los equipos compiten por el título de campeón, y un premio de medio millón de dólares,  que en su momento mas algido tuvo a 6,4 millones  de espectadores en vivo</p>
-                
-                <button>Ver presentación</button>
-                
-                <button>Ver Partido Final</button>
+            <h2 class="contenidoII__title">COMPETENCIAS CON MÁS AUDIENCIA</h2>
+
+            <div class="contenidoII__divPrincipal">
+                <div class="contenidoII__divPrincipal__todo">
+                    <div class="contenidoII__divPrincipal__todo__img">
+                        <img src="/assets/img/img_worls.png" alt="Fotografia del estadio donde ocurrio el worlds de lol" width="500px" height="300px">
+                    </div>
+                    <div class="contenidoII__divPrincipal__todo__contenedor">
+                        <div class="contenidoII__divPrincipal__todo__contenedor__txt">
+                            <h3 class="contenidoII__divPrincipal__todo__txt__title">Worlds 2023 (League of Legends)</h3>
+                            <p class="contenidoII__divPrincipal__todo__txt__p">El Worlds 2023 se trata del campeonato mundial de League of Legends, es un torneo anual organizado por Riot Games que marca el final de cada temporada. Los equipos compiten por el título de campeón, y un premio de medio millón de dólares, que en su momento más álgido tuvo a 6,4 millones de espectadores en vivo</p>
+                        </div>
+                        <div class="contenidoII__divPrincipal__todo__contenedor__bttn">
+                            <a class="bttn" href="https://www.youtube.com/watch?v=AH8A79BrTEY" target="_blank">
+                                Ver Presentacion
+                            </a>
+                            <a class="bttn" href="https://www.youtube.com/watch?v=U-Rndl_2dNw" target="_blank">
+                                Ver Partido Final
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="contenidoII__divPrincipal__todo">
+                    <div class="contenidoII__divPrincipal__todo__contenedor">
+                        <div class="contenidoII__divPrincipal__todo__contenedor__txt">
+                            <h3 class="contenidoII__divPrincipal__todo__txt__title">VCT 2023 (Valorant)</h3>
+                            <p class="contenidoII__divPrincipal__todo__txt__p">La VCT es el nombre de el campeonato mundial del  juego competitivo valorant, es un torneo organizado por Riot Games con un pozo de 16 millones de dólares en premios. En su partido de la final llego a tener 1.29M de espectadores</p>
+                        </div>
+                        <div class="contenidoII__divPrincipal__todo__contenedor__bttn">
+                            <a class="bttn" href=https://www.youtube.com/watch?v=dWXDui9Cjmg" target="_blank">
+                                Ver Presentacion
+                            </a>
+                            <a class="bttn" href="https://www.youtube.com/watch?v=tFrFIcD2Hts&t=1s" target="_blank">
+                                Ver Partido Final
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contenidoII__divPrincipal__todo__img">
+                        <img src="/assets/img/img_vct.png" alt="Fotografia del estadio donde ocurrio la copa vct de valorant" width="500px" height="300px">
+                    </div>
+                </div>
+
+
+
+                <div class="contenidoII__divPrincipal__todo">
+                    <div class="contenidoII__divPrincipal__todo__img">
+                        <img src="/assets/img/img_pgl.png" alt="Fotografia del estadio donde ocurrio la pgl de counter strike" width="500px" height="300px">
+                    </div>
+                    <div class="contenidoII__divPrincipal__todo__contenedor">
+                        <div class="contenidoII__divPrincipal__todo__contenedor__txt">
+                            <h3 class="contenidoII__divPrincipal__todo__txt__title">PGL Major Stockholm (Cs:Go))</h3>
+                            <p class="contenidoII__divPrincipal__todo__txt__p">PGL Major Stockholm se trata del campeonato de Counter Strike Global Offensive, es un torneo de categoría S-Tier, con 24 equipos compitiendo por un premio total de $2,000,000 USD. Alcanzó los 2.74 millones de espectadores simultáneos</p>
+                        </div>
+                        <div class="contenidoII__divPrincipal__todo__contenedor__bttn">
+                          
+                            <a class="bttn" href="https://www.youtube.com/watch?v=npDuPuuYkUI&t=2s" target="_blank">
+                                Ver Partido Final
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-            <div>
-                <h3>VCT 2023 (Valorant)</h3>
-                <p>La VCT es el nombre de el campeonato mundial del  juego competitivo valorant, es un torneo organizado por Riot Games con un pozo de 16 millones de dólares en premios. En su partido de la final llego a tener 1.29M de espectadores  </p>
-                <button>Ver Partido Final</button>
-            </div>
-            
-            <img src="/assets/img/img_vct.png" alt="">
-
-
-            <img src="/assets/img/img_pgl.png" alt="">
-            
-            <div>
-                <h3>PGL Major Stockholm (Cs:Go)</h3>
-                <p>PGL Major Stockholm se trata del campeonato de Counter Strike Global Offensive, es un torneo de categoría S-Tier, con 24 equipos compitiendo por un premio total de $2,000,000 USD. Alcanzó los 2.74 millones de espectadores simultáneos</p>
-                <button>Ver Partido Final</button>
-            </div>
-            
+                     
         </section>
+
+        <hr class="separadores">
+        
 
         <!-- seccion 4, parte de las leyendas de los e-sports -->
         <section id="Contenido3">
@@ -198,25 +243,31 @@
                 <h3>YouTube</h3>
                 <p>Es una plataforma de Internet que permite a sus usuarios subir, visualizar y compartir videos.  
                     Se ha convertido en uno de los sitios webs más populares para el streaming de e-sports.</p>
-                <button>Ir</button>
+                <a class="bttn" href="https://www.youtube.com/" target="_blank">
+                Ir
+                </a>
 
             </div>
+
             <div>
                 <img src="/assets/img/icon_face.png" alt="icono representativo de facebook gaming">
 
                 <h3>Facebook Gaming</h3>
-                <p>Es una plataforma integrada en Facebook que permite a los usuarios transmitir y ver contenido de videojuegos en vivo. 
-                    Se ha convertido en uno de los sitios webs más populares para el streaming de e-sports.</p>
-                <button>Ir</button>
+                <p>Es una plataforma integrada en Facebook que permite a los usuarios transmitir y ver contenido de videojuegos en vivo.  Se ha convertido en uno de los sitios webs más populares para el streaming de e-sports.</p>
+                <a class="bttn" href="https://www.facebook.com/gaming/video/" target="_blank">
+                Ir
+                </a>
             </div>
+
             <div>
                 <img src="/assets/img/icon_ttv.png" alt="icono representativo de Twitch">
 
                 <h3>Twitch</h3>
-                <p>También conocida como Twitch.tv, es una plataforma de streaming de videos en vivo.  
-
-                    Se ha convertido en el sitio web más popular para el streaming de e-sports actualmente.</p>
-                <button>Ir</button>
+                <p>También conocida como Twitch.tv, es una plataforma de streaming de videos en vivo.  Se ha convertido en el sitio web más popular para el streaming de e-sports actualmente.</p>
+                
+                <a class="bttn" href="https://www.twitch.tv/" target="_blank">
+                Ir
+                </a>
             </div>
         </section>
 
