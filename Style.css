@@ -1,99 +1,37 @@
-/* Selector universal, selecciona todos los elementos, por lo general los estilos comienzan con este selector. Es el menos especifico de los selectores.  Aqui debemos setear los estilos */
-
 * {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 1.1rem;
     font-style: normal;
-    font-variation-settings:
-    "slnt" 0;
     color: #f2f2f2;
-   
-    
     text-decoration: none;
     list-style: none;    
     /* border: 1px solid #96176a;  */
     margin: 0;
     padding: 0;
     outline: none;
-
-    
-    /* La propiedad mas importante del setteo de estilos se llama box sizing */
     box-sizing: border-box;
 }
-
-@font-face {
-    font-family: Arial;
-    src: url('/assets/fonts/ARIAL.TTF');
-}
-/* 
-Algunas medidas para las letras
-
-**********FIJAS
-
-pixeles px
-puntos pt
-
-EM     em = 16px
-REM    rem = 16px
-*****Por lo general se utilizan em y rem para texto
-
-
-
-*********RESPONSIVAS
-
-Porcentuales % 
-referencias de viewport vw vh*/
-
-
-/* a partir de aca comienzan los selectores por etiquetas. Las etiquetas tienen mayor nivel de especificacion*/
-
-
-/* body{
-    color:#f2f2f2;
-    background-color: #2e2e2e;
-    background-image: linear-gradient( 0deg, #2f0a6a, #e82fb4);
-    background-image: radial-gradient(circle, red, blue);
-    background-image: url('/image.png');
-
-    background-size: 100%;
-    background-repeat: repeat-y;
-}
-
-img {
-    Cuando trabaje con elementos que no sean textos, voy a priorizar el uso de medidadas responsivas. Ejemplo, Las imagenes 
-    
-    width: 100%;
-} 
-*/
-
-
 
 .body{
     background-color: #2e2e2e;
 }
-
 .bttn {
     background-color: #F22797;    
     font-weight: bold;
     border-radius: 10px;
     padding: 15px 30px;
     transition: background .4s ease-in, color .9s ease-in ;
-    border: 0px;
 }
-
-
 .bttn:hover{
     color: #d3d2d2;
     background-color: #97105a
 }
-
 .separadores{
     border: none;
     height: 3px;
     background-image: radial-gradient(#f22797, #1E3259); 
 }
-
 .navbar {
     background-color: #1E3259;
     padding: 16px 20px;
@@ -102,8 +40,6 @@ img {
     left: 0;
     z-index: 100;
 }
-
-
 .navbar__nav {
     display: flex;
     align-items: center;
@@ -111,12 +47,10 @@ img {
     justify-content: space-between;
     
 }
-
 .navbar__nav__icon  {
     width: 30px;
     height: 30px;
 }
-
 .navbar__nav__list {
     display: flex;
     gap: 25px;
@@ -132,7 +66,6 @@ img {
     position: relative;
     padding: 30px;
 }
-
 .jumbotron__img{
     background-color: #000000;
     position: absolute;
@@ -145,40 +78,39 @@ img {
     filter: blur(3px);
     filter: brightness(50%);
     filter: saturate(120%);
-    filter: brightness(-120%);
     filter: opacity(59%);
 }
 
 .jumbotron__txt{
     font-size: 4.5rem;
-    font-weight: 650;
+    font-weight: 600;
+    @media (max-width: 672px) {
+        font-size: 2.5rem;
+    }
     
 }
 
 .jumbotron__txt2{
     font-size: 6.6rem;
     font-weight: bold;
+    @media (max-width: 672px) {
+        font-size: 2.5rem;
+    }
 }
-
-
 .jumbotron__bttn{
     overflow: hidden;
     padding: 15px 30px;
     font-weight: bold;
-    font-size: 1.1rem;
     border: 5px solid;
     border-radius: 10px;
     background: transparent;
     border-image: linear-gradient(180deg, #f22797, #1E3259);
     border-image-slice: 1;   
     cursor: pointer;
-    margin-top: 2%;
-   
+    margin-top: 20px;  
 }
-
 .jumbotron__bttn:hover{
     font-weight: bold;
-    font-size: 1.1rem;
     color: #ffffff;
     border: 5px solid;
     border-radius: 10px;
@@ -186,101 +118,85 @@ img {
     border-image: linear-gradient(0deg, #f22797, #1E3259);
     border-image-slice: 1;
 }
-
 .contenidoI {
+    margin-bottom: 100px;
+}
+
+.title{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 7%;
-}
-
-.contenidoI__title{
     font-weight: bold;
-    margin-top: 7%;
-    margin-bottom: 2.5%;
+    margin: 70px;
 }
-
-.contenidoI__divPrincipal{
-    display: flex;
-    flex-direction: row;
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
-    justify-content: center;
+    gap: 30px;
+    margin: 30px;
 }
-
-.contenidoI__divPrincipal__tarjetas{
+.contenedor__tarjetas{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 25px 50px;
+    border: 4px solid;
+    height: 100%;
+    border-image: linear-gradient(180deg, #f22797, #1E3259);
+    border-image-slice: 1;
 }
-
-.contenidoI__divPrincipal__tarjetas__icon{
+.contenedor__tarjetas__icon{
     width: 30%;
-    height: 30%;
+    height: 25%;
 }
-
-
-.contenidoI__divPrincipal__tarjetas__title{
+.contenedor__tarjetas__title{
     font-weight: bold;
-    margin: 6%;
+    margin: 40px;
     text-align: center;
 }
-
-.contenidoI__divPrincipal__tarjetas__txt{
+.contenedor__tarjetas__txt{
     text-align: center;
     font-size: 0.9rem;
+    margin-bottom: 40px;
 }
-
 .contenidoII{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-image: url('assets/img/img_texture.png');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    padding: 20px; 
+    background-size: cover;
 }
 .contenidoII__title{
-    text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;   
-    margin-top: 7%;
-    margin-bottom: 2.5%;
+    margin: 50px
 }
-
-.contenidoII__divPrincipal {
+.contenidoII__contenedor {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 25px 50px;
     gap: 10px;
-    margin-bottom: 7%;
-       
+    margin-bottom: 7%;      
 }
-
-.contenidoII__divPrincipal__todo{
+.contenidoII__contenedor__todo{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 15px 30px;
 }
-
-.contenidoII__divPrincipal__todo__img{
+.contenidoII__contenedor__todo__img{
    display: flex;
    flex-direction: row;
    justify-content: flex-start;
    padding: 15px 30px;
 }
-
-
-.contenidoII__divPrincipal__todo__contenedor{
+.contenidoII__contenedor__todo__contenedor{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -289,117 +205,43 @@ img {
     margin-top: 2.5%;
     margin-bottom: 2.5%;
 }
-.contenidoII__divPrincipal__todo__txt__title{
-    text-align: center;
+.contenidoII__contenedor__todo__txt__title{
     font-weight: bold;
-    font-size: 1.1rem;
     margin-bottom: 5%;
 }
-
-.contenidoII__divPrincipal__todo__txt__p{
+.contenidoII__contenedor__todo__txt__p{
     text-align: center;
     font-weight: normal;
     font-size: 0.9rem;
     margin-bottom: 5%;
 }
-
-.contenidoII__divPrincipal__todo__contenedor__txt{
+.contenidoII__contenedor__todo__contenedor__txt{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 25px 50px;
-    font: ;
-
 }
-
-.contenidoII__divPrincipal__todo__contenedor__bttn{
+.contenidoII__contenedor__todo__contenedor__bttn{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-
-
-.form{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-}
-
-.form__formulario{
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 400px;
-    text-align: center;
-    padding: 30px 60px;
-}
-
-
-
-
-
+ 
 .footerbar {
-
     background-color: #1E3259;
     padding: 16px 20px;
-
-
 }
-
-
 .footerbar__nav {
-
     display: flex;
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-    
 }
-
 
 .footerbar__nav__icon  {
     width: 30px;
     height: 30px;
-}
-
-.footerbar__nav__txt {
-    display: flex;
-    gap: 25px;
-    text-align: center;
-   
-}
-
-.footerbar__nav__list li a {
-    color: #f2f2f2;
-}
-
-
-@keyframes myAnimation {
-    0%{
-        transform: none;
-    }
-
-    20% {
-        transform: translateY(10px);
-    }
-
-    40%{
-        transform: translateY(-10px);
-    }
-
-    80%{
-        transform: rot
-    }
-    
-    90%{
-        transform: scale(1.1);
-    }
-
-    100%{
-        transform: scale(1);
-    }
 }
