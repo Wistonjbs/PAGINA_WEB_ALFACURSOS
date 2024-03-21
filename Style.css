@@ -12,7 +12,6 @@
     outline: none;
     box-sizing: border-box;
 }
-
 .body{
     background-color: #2e2e2e;
 }
@@ -24,7 +23,7 @@
     transition: background .4s ease-in, color .9s ease-in ;
 }
 .bttn:hover{
-    color: #d3d2d2;
+    color: #aaa9a9;
     background-color: #97105a
 }
 .separadores{
@@ -45,7 +44,6 @@
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-    
 }
 .navbar__nav__icon  {
     width: 30px;
@@ -56,7 +54,6 @@
     gap: 25px;
     flex-direction: row;
 }
-
 .jumbotron{
     height: 620px;
     display: flex;
@@ -87,9 +84,7 @@
     @media (max-width: 672px) {
         font-size: 2.5rem;
     }
-    
 }
-
 .jumbotron__txt2{
     font-size: 6.6rem;
     font-weight: bold;
@@ -99,26 +94,27 @@
 }
 .jumbotron__bttn{
     overflow: hidden;
+    margin-top: 20px;
+    border-radius: 7.5px;
+}
+.jumbotron button {
+    transition: border .3s ease-in;
     padding: 15px 30px;
     font-weight: bold;
-    border: 5px solid;
-    border-radius: 10px;
+    font-size: 1.1rem;
+    border: solid 5px transparent;
     background: transparent;
     border-image: linear-gradient(180deg, #f22797, #1E3259);
     border-image-slice: 1;   
     cursor: pointer;
-    margin-top: 20px;  
 }
-.jumbotron__bttn:hover{
-    font-weight: bold;
-    color: #ffffff;
-    border: 5px solid;
-    border-radius: 10px;
-    background: transparent;
-    border-image: linear-gradient(0deg, #f22797, #1E3259);
-    border-image-slice: 1;
-}
-.contenidoI {
+.jumbotron button:hover{
+    transition: border .3s ease-in;    
+    border-image: linear-gradient(45deg, #f22797, #1E3259);
+    border-image-slice: 1;   
+} 
+/* este estilo se le aplica a todas las tarjetas, tanto de la parte de plataformas como a la de revolucion digital */
+.contenido {
     margin-bottom: 100px;
 }
 
@@ -160,6 +156,7 @@
     font-size: 0.9rem;
     margin-bottom: 40px;
 }
+/* Esta parte del contenido 2 se refiere a la 2da seccion de la pagina, la parte que esta intercalando de derecha a izquierda y visceversa*/
 .contenidoII{
     display: flex;
     flex-direction: column;
@@ -190,35 +187,25 @@
     align-items: center;
     padding: 15px 30px;
 }
-.contenidoII__contenedor__todo__img{
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-start;
-   padding: 15px 30px;
-}
 .contenidoII__contenedor__todo__contenedor{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 15px 30px;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .contenidoII__contenedor__todo__txt__title{
     font-weight: bold;
-    margin-bottom: 5%;
 }
 .contenidoII__contenedor__todo__txt__p{
     text-align: center;
-    font-weight: normal;
     font-size: 0.9rem;
-    margin-bottom: 5%;
+    margin: 30px;
 }
 .contenidoII__contenedor__todo__contenedor__txt{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 25px 50px;
 }
@@ -226,10 +213,63 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     gap: 20px;
 }
- 
+/* Aqui estan todos los estilos para la galeria de imagenes */
+.leyendas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/assets/img/texture.jpg);
+    background-size: cover;
+}
+.leyendas h2{
+    margin-top: 100px;
+}
+.organizador{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 200px;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 500px;
+    perspective: 800px;
+}
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.container:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+    transition: transform 1500ms;
+}
+.front, .back{
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 5px 2px rgb(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px
+}
+.back{
+    background-color: #0d0c0cb2;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 10px 20px;
+}
 .footerbar {
     background-color: #1E3259;
     padding: 16px 20px;
@@ -240,7 +280,6 @@
     justify-content: center;
     justify-content: space-between;
 }
-
 .footerbar__nav__icon  {
     width: 30px;
     height: 30px;
