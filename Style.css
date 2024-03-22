@@ -257,9 +257,12 @@
     width: 100%;
     box-shadow: 0 0 5px 2px rgb(50, 50, 50, 0.25);
     position: absolute;
+    object-fit: cover;
     backface-visibility: hidden;
     border-radius: 10px
 }
+
+
 .back{
     background-color: #0d0c0cb2;
     transform: rotateY(180deg);
